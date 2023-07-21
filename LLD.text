@@ -1,0 +1,45 @@
++-------------------+              +---------------------+               +---------------------+
+|   TravelPackage   |              |     Destination     |               |       Activity      |
++-------------------+              +---------------------+               +---------------------+
+| - name            | 1          * | - name              |            *  | - name              |
+| - passengerCapacity|--------------| - activities        |-------------* | - description       |
+| - itinerary       |              +---------------------+               | - cost              |
+| - passengers      |                                                  | - capacity          |
++-------------------+                                                  | - destination       |
+| + addPassenger()  |                                                  | - signedUpPassengers|
+| + printItinerary()|                                                  +---------------------+
+| + printPassengerList()|                                              | + isPassengerSignedUp()|
+| + printAvailableActivities()|                                        | + getBalanceFromDatabase()|
+| + getPassengers() |                                                  | + updateBalanceInDatabase()|
+| + getItinerary()  |                                                  | + getBalance()      |
++-------------------+                                                  | + deductFromBalance()|
+                                                                       | + hasAvailability() |
+                                                                       | + signUpPassenger() |
+                                                                       | + getName()         |
+                                                                       | + getDescription()  |
+                                                                       | + getCost()         |
+                                                                       | + getCapacity()     |
+                                                                       | + getAvailableSpaces()|
+                                                                       +---------------------+
+                                                                            
++---------------------+
+|      Passenger      |
++---------------------+
+| - name              |
+| - passengerNumber   |
+| - passengerType     |
+| - signedUpActivities|
+| - balance           |
++---------------------+
+| + signUpForActivity()|
+| + isPassengerSignedUp()|
+| + getSignedUpActivities()|
+| + getBalance()      |
+| + setBalance()      |
+| + deductFromBalance()|
+| + retrieveBalanceFromDatabase()|
+| + updateBalanceInDatabase()|
+| + getName()         |
+| + getPassengerNumber()|
+| + getPassengerType()| 
++---------------------+

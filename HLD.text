@@ -1,0 +1,72 @@
++---------------------+
+|   TravelPackage     |
++---------------------+
+| - name              |
+| - passengerCapacity |
+| - itinerary         |
+| - passengers        |
++---------------------+
+| + addPassenger()    |
+| + printItinerary()  |
+| + printPassengerList()|
+| + printAvailableActivities()|
+| + getPassengers()   |
+| + getItinerary()    |
++---------------------+
+
++---------------------+
+|    Destination      |
++---------------------+
+| - name              |
+| - activities        |
++---------------------+
+| + addActivity()     |
+| + getName()         |
+| + getActivities()   |
++---------------------+
+
++---------------------+
+|       Activity      |
++---------------------+
+| - name              |
+| - description       |
+| - cost              |
+| - capacity          |
+| - destination       |
+| - signedUpPassengers|
++---------------------+
+| + isPassengerSignedUp()|
+| + getBalanceFromDatabase()|
+| + updateBalanceInDatabase()|
+| + getBalance()      |
+| + deductFromBalance()|
+| + hasAvailability() |
+| + signUpPassenger() |
+| + getName()         |
+| + getDescription()  |
+| + getCost()         |
+| + getCapacity()     |
+| + getAvailableSpaces()|
++---------------------+
+
++---------------------+
+|      Passenger      |
++---------------------+
+| - name              |
+| - passengerNumber   |
+| - passengerType     |
+| - signedUpActivities|
+| - balance           |
++---------------------+
+| + signUpForActivity()|
+| + isPassengerSignedUp()|
+| + getSignedUpActivities()|
+| + getBalance()      |
+| + setBalance()      |
+| + deductFromBalance()|
+| + retrieveBalanceFromDatabase()|
+| + updateBalanceInDatabase()|
+| + getName()         |
+| + getPassengerNumber()|
+| + getPassengerType()| 
++---------------------+
